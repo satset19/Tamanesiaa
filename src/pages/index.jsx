@@ -1,18 +1,18 @@
 import yayJpg from "../assets/yay.jpg";
 // import "../../index.css";
-import CustomControls from "./Components/courselHome";
+import CorouselBesar from "./Components/courselHome";
 import CardHome from "../pages/Components/CardHome";
 import SmallCorousel from "./Components/SmallCorousell";
 
 export default function HomePage() {
   return (
     <>
-      <CustomControls />
-      <div className="py-10">
+      <CorouselBesar />
+      <div className="px-20 py-20">
         <SmallCorousel />
       </div>
 
-      <div className="m-auto grid grid-cols-4 lg:grid-cols-3 2xl:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-2 gap-2">
+      <div className="grid grid-cols-4 gap-4 m-auto lg:grid-cols-3 2xl:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-2 max-sm:gap-1">
         <CardHome />
         <CardHome />
         <CardHome />
