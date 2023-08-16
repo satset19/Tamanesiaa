@@ -8,10 +8,10 @@ export default function NavbarWithCTAButton() {
       <Navbar.Brand href="https://flowbite-react.com">
         {/* <img
           alt="Flowbite React Logo"
-          className="mr-3 h-6 sm:h-9"
+          className="h-6 mr-3 sm:h-9"
           src="/favicon.svg"
         /> */}
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
           Tamanesia
         </span>
       </Navbar.Brand>

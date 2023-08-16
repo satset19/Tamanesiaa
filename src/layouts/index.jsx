@@ -5,8 +5,10 @@ import NavbarHome from "../pages/Components/NavbarHome";
 export default function Layout() {
   return (
     <div className={styles.navs}>
-      <NavbarHome />
-      <div className=" pt-8">
+      <div className="sticky top-0">
+        <NavbarHome />
+      </div>
+      <div className="pt-8 ">
         <Outlet />
       </div>
     </div>
