@@ -26,7 +26,7 @@ const NavbarHome = () => {
 
   const navbarStyles = {
     position: "fixed",
-    transition: "top 0.6s",
+    transition: "top 0.3s",
   };
 
   return (
