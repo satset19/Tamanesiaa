@@ -3,7 +3,7 @@ import img from "../../assets/yay.jpg";
 
 function CardHome() {
   return (
-    <div className="mx-auto bg-white shadow-xl card w-96 max-sm:w-44 hover:bg-base-300">
+    <div className="mx-auto static bg-white shadow-xl card w-96 max-sm:w-44 hover:bg-base-300">
       <figure className="px-10 pt-10">
         <img src={img} alt="Shoes" className="rounded-xl" />
       </figure>

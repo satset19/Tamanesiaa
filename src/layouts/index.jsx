@@ -4,7 +4,7 @@ import "../../index.css";
 import NavbarHome from "../pages/Components/NavbarHome";
 export default function Layout() {
   return (
-    <div className={styles.navs}>
+    <div className={styles.navs} data-theme="light">
       <div className="sticky top-0">
         <NavbarHome />
       </div>
