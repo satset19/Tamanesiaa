@@ -1,18 +1,24 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     extend: {},
   },
   plugins: [
-    require('daisyui'), require('flowbite/plugin')
+    require('daisyui')
   ],
   theme: {
     colors: {
-      baseTheme: '#2D2F91'
+      baseTheme: '#2D2F91',
+      white: '#FFFFFF'
+    },
+    extend: {
+      fontFamily: {
+        Calistoga: ['Montserrat', 'sans-serif']
+      }
     }
   },
   daisyui: {

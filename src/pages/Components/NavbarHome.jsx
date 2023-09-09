@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useScroll } from "../../utilities/helpers";
-import { Button, Navbar } from "flowbite-react";
+// import { Button, Navbar } from "flowbite-react";
 import logo from "../../assets/TamanesiaZine.png";
 
 const NavbarHome = () => {
@@ -26,7 +26,7 @@ const NavbarHome = () => {
   }, [scrollY]);
   return (
     <header
-      className="bg-baseTheme text-white top-0 w-full shadow-md py-4"
+      className="bg-baseTheme text-white top-0 w-full font-bold font-Calistoga shadow-md py-4"
       style={setStyle()}>
       <nav className="container mx-auto px-6">
         {scrollDirection === "down" ? (
@@ -45,8 +45,8 @@ const NavbarHome = () => {
                   d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
-            <div className=" flex justify-center">
-              <a href="#" className="text-2xl font-bold  left-0">
+            <div className=" flex justify-center ">
+              <a href="#" className="text-2xl left-0">
                 Tamanesia
               </a>
             </div>
