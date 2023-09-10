@@ -40,12 +40,12 @@ const NavbarHome = () => {
     <header
       className="bg-baseTheme text-white top-0 w-full font-bold font-Calistoga shadow-md py-4"
       style={setStyle()}>
-      <nav className="container mx-auto px-6">
+      <nav className=" mx-auto px-6">
         {scrollDirection === "down" ? (
           <>
             <button
               onClick={handleHamburgerButton}
-              className="  focus:outline-none absolute left-5 top-5">
+              className=" focus:outline-none absolute left-5 top-5">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -86,9 +86,9 @@ const NavbarHome = () => {
                 Tamanesia
               </a>
             </div>
-            <div className="flex max-md:hidden">
-              <a href="#" className="text-2xl font-bold absolute left-10 top-2">
-                <img src={logo} className="h-10"></img>
+            <div className="flex gap-10 max-md:hidden">
+              <a href="#" className="text-2xl font-bold left-10 top-2">
+                <img src={logo} className="h-8"></img>
               </a>
               <div className="hidden md:flex items-center space-x-4 ">
                 <a href="#" className=" hover:text-blue-600">

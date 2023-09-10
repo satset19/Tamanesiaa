@@ -29,7 +29,7 @@ function BarAction() {
             <img src={logo} className="h-10"></img>
           </a>
         </div>
-        <div className="hidden md:flex items-center space-x-4 py-4 ">
+        <div className="items-center space-x-4 py-4 ">
           <a href="#" className=" hover:text-blue-600">
             Home
           </a>
