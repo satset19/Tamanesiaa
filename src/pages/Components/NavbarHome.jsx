@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useScroll } from "../../utilities/helpers";
+import { useStore } from "../../model";
 // import { Button, Navbar } from "flowbite-react";
 import logo from "../../assets/TamanesiaZine.png";
+// import BarAction from "./BarAction";
 
 const NavbarHome = () => {
   const { scrollY, x, scrollDirection } = useScroll();
+  const { bar, setBar } = useStore((state) => {
+    return state;
+  });
+
   const styles = {
     active: {
       visibility: "visible",
@@ -17,6 +23,11 @@ const NavbarHome = () => {
     },
   };
 
+  const handleHamburgerButton = () => {
+    if (bar === false) setBar(true);
+    else setBar(false);
+    console.log(bar);
+  };
   const setStyle = () => {
     return scrollDirection === "down" ? styles.hidden : styles.active;
   };
@@ -24,6 +35,7 @@ const NavbarHome = () => {
   useEffect(() => {
     setStyle();
   }, [scrollY]);
+
   return (
     <header
       className="bg-baseTheme text-white top-0 w-full font-bold font-Calistoga shadow-md py-4"
@@ -31,7 +43,9 @@ const NavbarHome = () => {
       <nav className="container mx-auto px-6">
         {scrollDirection === "down" ? (
           <>
-            <button className="  focus:outline-none absolute left-5 top-5">
+            <button
+              onClick={handleHamburgerButton}
+              className="  focus:outline-none absolute left-5 top-5">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -53,7 +67,7 @@ const NavbarHome = () => {
           </>
         ) : (
           <>
-            <button className="md:hidden  focus:outline-none absolute left-5 top-5">
+            <button className="md:hidden focus:outline-none absolute left-5 top-5">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -72,7 +86,7 @@ const NavbarHome = () => {
                 Tamanesia
               </a>
             </div>
-            <div className="flex justify-center items-center static max-md:hidden">
+            <div className="flex max-md:hidden">
               <a href="#" className="text-2xl font-bold absolute left-10 top-2">
                 <img src={logo} className="h-10"></img>
               </a>
